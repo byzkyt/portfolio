@@ -116,6 +116,38 @@
   margin-left: auto;
   color: #00E2AC; }
 
+#sidebar-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  width: 0;
+  height: 100%;
+  padding-top: 10px;
+  font-family: "Roboto", serif;
+  color: white;
+  background-color: black;
+  z-index: 2;
+  overflow: hidden;
+  transition: all 0.5s ease; }
+  #sidebar-wrapper h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 4px;
+    padding: 0; }
+  #sidebar-wrapper a {
+    color: white;
+    font-size: 24px;
+    margin-left: 10px; }
+  #sidebar-wrapper.open {
+    width: 320px; }
+  #sidebar-wrapper .sidebar-links {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
 @media only screen and (max-width: 480px) {
   #intro {
     min-height: 640px; }
